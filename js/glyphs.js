@@ -8,7 +8,6 @@ $('document').ready(function() {
 
     document.execCommand('copy'); // or 'cut'
   }, false);
-<<<<<<< HEAD
   
   var copyBtn = document.querySelector('#copybtncode');
   copyBtn.addEventListener('click', function () {
@@ -18,8 +17,6 @@ $('document').ready(function() {
 
     document.execCommand('copy'); // or 'cut'
   }, false);
-=======
->>>>>>> origin/master
 
 
   var url = location.hash;
@@ -52,18 +49,12 @@ $('document').ready(function() {
   $('.glyphsblock i').click(function(){
     var glyph = $(this).attr('data-id');
     var value = $('.clickedglyphs').html();
-<<<<<<< HEAD
 	var codevalue = $('#gliphcode').val();
-=======
->>>>>>> origin/master
     var linkvalue = $('.linkglyphs').html();
     var url = window.location.href; 
     if (value.length < 12) {
       $('.clickedglyphs').html(value +glyph);
-<<<<<<< HEAD
 	  $('#gliphcode').val(codevalue +glyph);
-=======
->>>>>>> origin/master
       var linkglyphs = $('.clickedglyphs').html();
       $('#gliphlink').val(url +'#'+linkglyphs);
     } 
@@ -76,10 +67,7 @@ $('document').ready(function() {
   $('.clearglyphs').click(function(){
     $('.clickedglyphs').html('');
     $('#gliphlink').val('');
-<<<<<<< HEAD
 	$('#gliphcode').val('');
-=======
->>>>>>> origin/master
   });
   $('.clearglyphsurl').click(function(){
     $('.glyphs').val('');
