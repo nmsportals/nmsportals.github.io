@@ -16,42 +16,70 @@
 <i class="portal"></i>
 <span>No Man's Sky Portals Decoder</span>
 </div>
+<div class="menu">
+<ul class="tabs-menu">
+	<li class="current"><a href="#tab-1">
+	  Share Coordinates
+	</a></li>
+	<li><a href="#tab-2">
+	  Convert Coordinates
+	</a></li>
+	<li class="none"><a href="#tab-3">
+	  Portal Index
+	</a></li>
+</ul>
+</div>
 
-<div class="sharetext">Share your portal Coordinates:</div>
-<div class="description">Clicking glyphs makes an alphanumeric sequence and generate a link to share below</div>
-<div class="glyphsblock">
-  <i class="glyph-0" data-id="0"></i>
-  <i class="glyph-1" data-id="1"></i>
-  <i class="glyph-2" data-id="2"></i>
-  <i class="glyph-3" data-id="3"></i>
-  <i class="glyph-4" data-id="4"></i>
-  <i class="glyph-5" data-id="5"></i>
-  <i class="glyph-6" data-id="6"></i>
-  <i class="glyph-7" data-id="7"></i>
-  <i class="glyph-8" data-id="8"></i>
-  <i class="glyph-9" data-id="9"></i>
-  <i class="glyph-A" data-id="A"></i>
-  <i class="glyph-B" data-id="B"></i>
-  <i class="glyph-C" data-id="C"></i>
-  <i class="glyph-D" data-id="D"></i>
-  <i class="glyph-E" data-id="E"></i>
-  <i class="glyph-F" data-id="F"></i>
+<div class="tab">
+	<div id="tab-1" class="tab-content">
+		<div class="sharecoords">
+			<div class="sharetext">Share your portal Coordinates:</div>
+			<div class="description">Clicking glyphs makes an alphanumeric sequence and generate a link to share below</div>
+			<div class="glyphsblock">
+			  <i class="glyph-0" data-id="0"></i>
+			  <i class="glyph-1" data-id="1"></i>
+			  <i class="glyph-2" data-id="2"></i>
+			  <i class="glyph-3" data-id="3"></i>
+			  <i class="glyph-4" data-id="4"></i>
+			  <i class="glyph-5" data-id="5"></i>
+			  <i class="glyph-6" data-id="6"></i>
+			  <i class="glyph-7" data-id="7"></i>
+			  <i class="glyph-8" data-id="8"></i>
+			  <i class="glyph-9" data-id="9"></i>
+			  <i class="glyph-A" data-id="A"></i>
+			  <i class="glyph-B" data-id="B"></i>
+			  <i class="glyph-C" data-id="C"></i>
+			  <i class="glyph-D" data-id="D"></i>
+			  <i class="glyph-E" data-id="E"></i>
+			  <i class="glyph-F" data-id="F"></i>
+			</div>
+			<div class="clickedglyphs"></div>
+			<input id="gliphlink" type='text' class='form-control'/>
+			<input id="gliphcode" type='text' class='form-control'/>
+			<div class="linkbuttons">
+			<button id="copybtn">Copy link</button>
+			<button id="copybtncode">Copy code only</button>
+			<button class="clearglyphs">Clear</button>
+			</div>
+		</div>
+	</div>
+	<div id="tab-2" class="tab-content">
+		<div class="loadcoords">
+			<div class="sharetext">Convert Coordinates to Glyphs:</div>
+			<div class="description">Paste the shared code here to convert into glyphs</div>
+			<input class="glyphs" maxlength="12">
+			<div class="result"></div>
+			<div class="linkbuttons">
+			<div class="clearglyphsurl">Clear</div>
+			</div>
+		</div>
+	</div>
+	<div id="tab-3" class="tab-content">
+		
+	</div>
 </div>
-<div class="clickedglyphs"></div>
-<input id="gliphlink" type='text' class='form-control'/>
-<input id="gliphcode" type='text' class='form-control'/>
-<div class="linkbuttons">
-<button id="copybtn">Copy link</button>
-<button id="copybtncode">Copy code only</button>
-<button class="clearglyphs">Clear</button>
-</div>
-<div class="sharetext">Load Coordinates:</div>
-<div class="description">Paste the shared code here to convert into glyphs</div>
-<input class="glyphs" maxlength="12">
-<div class="result"></div>
-<div class="linkbuttons">
-<div class="clearglyphsurl">Clear</div>
-</div>
+
+
 </div>
 <div class="credits">
 <div class="author">

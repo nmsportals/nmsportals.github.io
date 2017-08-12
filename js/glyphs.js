@@ -29,6 +29,11 @@ $('document').ready(function() {
     for (var i = 0, len = hash.length; i < len; i++) {
       result += '<i class="glyph-' + hash[i] + '"></i>';
     }
+	$('.tabs-menu li:nth-of-type(1)').removeClass('current');
+	$('.tabs-menu li:nth-of-type(2)').addClass('current');
+	$('#tab-1').hide();
+    $('#tab-2').show();
+	
     $('.glyphs').val(hash);
     $(".result").html(result);
 
@@ -73,4 +78,12 @@ $('document').ready(function() {
     $('.glyphs').val('');
     $('.result').html('');
   });
+  $(".tabs-menu a").click(function(event) {
+  event.preventDefault();
+  $(this).parent().addClass("current");
+  $(this).parent().siblings().removeClass("current");
+  var tab = $(this).attr("href");
+  $(".tab-content").not(tab).css("display", "none");
+  $(tab).fadeIn();
+});
 });
