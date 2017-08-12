@@ -252,6 +252,7 @@ height: 74px;
     font-size: 13px;
     font-family: roboto;
     padding: 5px;
+	box-sizing: border-box;
 }
 .author a {
     text-decoration: none;
