@@ -37,6 +37,16 @@ line-height: 30px;
 align-items: center;
 margin-left: 10px;
 }
+.description {
+display: block;
+background: #0f1413;
+color: #fff;
+font-family: roboto;
+font-size: 12px;
+padding: 0px 0 5px;
+text-align: center;
+font-weight: 100;
+}
 .portal {
 background-image: url(../img/portal.png);
 }
@@ -106,8 +116,8 @@ cursor: pointer;
 transition: all ease 0.1s;
 }
 .glyphsblock i:active {
-    background-color: rgba(165, 165, 165, 0.50);
-	transform: translateY(2px);
+background-color: rgba(165, 165, 165, 0.50);
+transform: translateY(2px);
 }
 .clickedglyphs {
 display: block;
