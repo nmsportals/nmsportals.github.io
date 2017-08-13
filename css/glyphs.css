@@ -8,6 +8,7 @@ background-size: cover;
 }
 .content {
 display: inline-block;
+width: 100%;
 }
 .title {
 display: flex;
