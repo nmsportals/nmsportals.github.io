@@ -6,6 +6,9 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
 }
+.content {
+display: inline-block;
+}
 .title {
 display: flex;
 width: 100%;
