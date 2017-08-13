@@ -56,7 +56,7 @@ $('document').ready(function() {
     var value = $('.clickedglyphs').html();
 	var codevalue = $('#gliphcode').val();
     var linkvalue = $('.linkglyphs').html();
-    var url = window.location.href; 
+    var url = ('http://' + window.location.hostname + '/');
     if (value.length < 12) {
       $('.clickedglyphs').html(value +glyph);
 	  $('#gliphcode').val(codevalue +glyph);
