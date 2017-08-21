@@ -363,22 +363,22 @@ $('document').ready(function() {
     } else {$('.clearga').show();}
     if (galacticCoords.length == 19) {
       var doConversion =[];
-      if ( parseInt(A, 16) > 4095) {
+      if ( parseInt(A, 16) > 4095 || parseInt(A, 16) < 0001) {
         console.log("Invalid Address A "+A);
         $('.gacoordsError').fadeIn({queue: false, duration: '300'});
         $('.wrongcoords').html(A);
         doConversion = false;
-      } else if ( parseInt(B, 16) > 255 ) {
+      } else if ( parseInt(B, 16) > 255 || parseInt(B, 16) < 0001) {
         console.log("Invalid Address B");
         $('.gacoordsError').fadeIn({queue: false, duration: '300'});
         $('.wrongcoords').html(B);
         doConversion = false;
-      } else if ( parseInt(C, 16) > 4095) {
+      } else if ( parseInt(C, 16) > 4095 || parseInt(C, 16) < 0001) {
         console.log("Invalid Address C");
         $('.gacoordsError').fadeIn({queue: false, duration: '300'});
         $('.wrongcoords').html(C);
         doConversion = false;
-      } else if ( parseInt(D, 16) > 767) {
+      } else if ( parseInt(D, 16) > 767 || parseInt(D, 16) < 0001) {
         console.log("Invalid Address D");
         $('.gacoordsError').fadeIn({queue: false, duration: '300'});
         $('.wrongcoords').html(D);
