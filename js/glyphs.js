@@ -1,6 +1,8 @@
 $('document').ready(function() {
-
-
+  
+  var version = "V 1.1";
+  $('.version').html(version);
+  
   var copyLink = document.querySelector('#copybtn');
   copyLink.addEventListener('click', function () {
     var copiedObj = document.querySelector('#glyphlink');
@@ -106,78 +108,61 @@ $('document').ready(function() {
       console.log(P, O, R, T, Al)
 
       Al = parseInt(Al, 16);
-      console.log("HexToInt "+Al);
-      Al = +Al +2048 -4097;
+      console.log("HexToInt Al "+Al);
+      Al = +Al +2047;
+      console.log("SUM Al +2047 "+Al);
+      Al = +Al % 4096;
+      console.log("MOD Al % 4096 "+Al);
       Al = Math.abs(Al);
-      console.log("Al Operation "+Al);
+      console.log("Result Al "+Al);
       Al = Al.toString(16).toUpperCase();
-      console.log("AL Lenght: "+Al);
-      if (Al.length == 3) {
-        Al = ("0"+Al);
-      }
-      if (Al.length == 2) {
-        Al = ("00"+Al);
-      }
-      if (Al.length == 1) {
-        Al = ("000"+Al);
-      }
-      else {
-        Al = Al;
-      }
-      console.log("Al value:"+Al);
-
+      console.log("Lenght AL: "+Al);
+      if (Al.length == 3) {Al = ("0"+Al)}
+      if (Al.length == 2) {Al = ("00"+Al)}
+      if (Al.length == 1) {Al = ("000"+Al)}
+      else {Al = Al}
+      console.log("FINAL Al :"+Al);
 
       T = parseInt(T, 16);
-      T = +T +2048 -4097;
+      console.log("HexToInt T "+T);
+      T = +T +2047;
+      console.log("SUM T +2047 "+T);
+      T = +T % 4096;
+      console.log("MOD T % 4096 "+T);
       T = Math.abs(T);
+      console.log("Result T "+T);
       T = T.toString(16).toUpperCase();
-      console.log("T length:"+T.length);
-      if (T.length == 3) {
-        T = ("0"+T);
-      }
-      if (T.length == 2) {
-        T = ("00"+T);
-      }
-      if (T.length == 1) {
-        T = ("000"+T);
-      }
-      else {
-        T = T;
-      }
-      console.log("T value:"+T);
-
+      console.log("Length T: "+T.length);
+      if (T.length == 3) {T = ("0"+T)}
+      if (T.length == 2) {T = ("00"+T)}
+      if (T.length == 1) {T = ("000"+T)}
+      else {T = T}
+      console.log("FINAL T: "+T);
 
       R = parseInt(R, 16);
-      R = +R +128 -257;
+      console.log("HexToInt R "+R);
+      R = +R +127;
+      console.log("SUM R +127 "+R);
+      R = +R % 256;
+      console.log("MOD R % 256 "+R);
       R = Math.abs(R);
-      console.log("R operation: "+R);
+      console.log("Result R "+R);
       R = R.toString(16).toUpperCase();
-      console.log("R length now:"+R.length);
-      if (R.length == 3) {
-        R = ("0"+R);
-      }
-      if (R.length == 2) {
-        R = ("00"+R);
-      }
-      if (R.length == 1) {
-        R = ("000"+R);
-      }
-      else {
-        R = R;
-      }
-      console.log("R value:"+R);
+      console.log("Length R: "+R.length);
+      if (R.length == 3) {R = ("0"+R)}
+      if (R.length == 2) {R = ("00"+R)}
+      if (R.length == 1) {R = ("000"+R)}
+      else {R = R}
+      console.log("FINAL R: "+R);
 
-
-      if (O.length < 4 && O.length > 3) {
-        O = ("00"+O);
-      } else {
-        O = ("0"+O);
-      }
-      console.log("O value:"+O);
-      console.log("O length:"+O.length);
+      console.log("Length O: "+O.length);
+      if (O.length == 3) {O = ("0"+O)}
+      if (O.length == 2) {O = ("00"+O)}
+      if (O.length == 1) {O = ("000"+O)}
+      else {O = O}
+      console.log("FINAL O: "+O);
 
       var ValidateO = parseInt(O, 16);
-      console.log("ValidateO value:"+ValidateO);
       if ( ValidateO > 767) {
         console.log("O valueErrorCode:"+O);
         $('.portalError').fadeIn({queue: false, duration: '300'});
@@ -249,55 +234,61 @@ $('document').ready(function() {
         var result = linkglyphs.replace(regex, subst);
         var [P, O, R, T, Al] = result.split(":");
         Al = parseInt(Al, 16);
-        console.log("HexToInt "+Al);
-        Al = +Al +2048 -4097;
-        Al = Math.abs(Al);
-        console.log("Al Operation "+Al);
-        Al = Al.toString(16).toUpperCase();
-        console.log("AL Lenght: "+Al);
-        if (Al.length == 3) {
-          Al = ("0"+Al);
-        }
-        if (Al.length == 2) {
-          Al = ("00"+Al);
-        }
-        else {
-          Al = Al;
-        }
-        console.log("Al value:"+Al);
+      console.log("HexToInt Al "+Al);
+      Al = +Al +2047;
+      console.log("SUM Al +2047 "+Al);
+      Al = +Al % 4096;
+      console.log("MOD Al % 4096 "+Al);
+      Al = Math.abs(Al);
+      console.log("Result Al "+Al);
+      Al = Al.toString(16).toUpperCase();
+      console.log("Lenght AL: "+Al);
+      if (Al.length == 3) {Al = ("0"+Al)}
+      if (Al.length == 2) {Al = ("00"+Al)}
+      if (Al.length == 1) {Al = ("000"+Al)}
+      else {Al = Al}
+      console.log("FINAL Al :"+Al);
 
-        T = parseInt(T, 16);
-        T = +T +2048 -4097;
-        T = Math.abs(T);
-        T = T.toString(16).toUpperCase();
-        if (T.length == 3) {
-          T = ("0"+T);
-        }
-        if (T.length == 2) {
-          T = ("00"+T);
-        }
-        else {
-          T = T;
-        }
-        console.log("T value:"+T);
+      T = parseInt(T, 16);
+      console.log("HexToInt T "+T);
+      T = +T +2047;
+      console.log("SUM T +2047 "+T);
+      T = +T % 4096;
+      console.log("MOD T % 4096 "+T);
+      T = Math.abs(T);
+      console.log("Result T "+T);
+      T = T.toString(16).toUpperCase();
+      console.log("Length T: "+T.length);
+      if (T.length == 3) {T = ("0"+T)}
+      if (T.length == 2) {T = ("00"+T)}
+      if (T.length == 1) {T = ("000"+T)}
+      else {T = T}
+      console.log("FINAL T: "+T);
 
-        R = parseInt(R, 16);
-        R = +R +128 -257;
-        R = Math.abs(R);
-        console.log("R operation: "+R);
-        R = R.toString(16).toUpperCase();
-        if (R.length < 4 && R.length > 3) {
-          R = ("0"+R);
-        } else {
-          R = ("00"+R);
-        }
-        console.log("R value:"+R);
-        if (O.length < 4 && O.length > 3) {
-          O = ("00"+O);
-        } else {
-          O = ("0"+O);
-        }
-        console.log("O value:"+O);
+      R = parseInt(R, 16);
+      console.log("HexToInt R "+R);
+      R = +R +127;
+      console.log("SUM R +127 "+R);
+      R = +R % 256;
+      console.log("MOD R % 256 "+R);
+      R = Math.abs(R);
+      console.log("Result R "+R);
+      R = R.toString(16).toUpperCase();
+      console.log("Length R: "+R.length);
+      if (R.length == 3) {R = ("0"+R)}
+      if (R.length == 2) {R = ("00"+R)}
+      if (R.length == 1) {R = ("000"+R)}
+      else {R = R}
+      console.log("FINAL R: "+R);
+
+      console.log("Length O: "+O.length);
+      if (O.length == 3) {O = ("0"+O)}
+      if (O.length == 2) {O = ("00"+O)}
+      if (O.length == 1) {O = ("000"+O)}
+      else {O = O}
+      console.log("FINAL O: "+O);
+
+      var ValidateO = parseInt(O, 16);
         var ValidateO = parseInt(O, 16);
         console.log("ValidateO value:"+ValidateO);
         if ( ValidateO > 767) {
@@ -331,19 +322,15 @@ $('document').ready(function() {
     }
   });
 
-  var planetchoice = $('.planetNumber').get(0);
+  var portalchoice = $('.portalNumber').get(0);
   for (var i = 0; i <= 15; ++i) {
-    planetchoice[planetchoice.length] = new Option(i +1, i);
+    portalchoice[portalchoice.length] = new Option(i +1, i);
   }
 
-  $('.planetNumbers').on('change', function () {
-    var selectVal = $(".planetNumbers option:selected").val();
-    console.log("planeta: "+selectVal);
-  });
-  $('.planetNumber').change(function(){
+  $('.portalNumber').change(function(){
     var option = $(this).find('option:selected').val();
     /* setting input box value to selected option value */
-    console.log("planeta: "+option);
+    console.log("portal: "+option);
   });
 
   $('.gacoords').on('keyup keypress', function(e) {
@@ -390,38 +377,56 @@ $('document').ready(function() {
       console.log("Execute Conversion: "+doConversion);
       if (+doConversion == true) {
         console.log("Execute: "+doConversion);
+        console.log(A,B,C,D);
         D.toString(16);
         console.log("D value= "+D);
-        console.log(A,B,C,D);
+
+        console.log("A value= "+A);
         A = parseInt(A, 16);
         console.log("HextoInt A: "+A);
-        A = +A -2048 +4097;
+        A = +A +2049;
+        console.log("A - 2049= "+A);
+        //(x + y) % 4096;
+        A = +A % 4096;
+        console.log("A + % 4096= "+A);
         A = Math.abs(A);
-        console.log("A - 2047 "+A);
+        console.log("A +2049 -4096 RESULT = "+A);
         A = A.toString(16).toUpperCase();
         console.log("InttoHex A: "+A);
+        if (A.length == 2) {A = ("0"+A)}
+        if (A.length == 1) {A = ("00"+A)}
+        else {A = A}
 
+        console.log("B value= "+B);
         B = parseInt(B, 16);
-        console.log("HextoInt B: "+A);
-        B = +B +257 -128;
+        console.log("HextoInt B: "+B);
+        B = +B +129;
+        B = +B % 256;
+        console.log("B % 128 = "+B);
         B = Math.abs(B);
-        console.log("B - 2047 "+B);
         B = B.toString(16).toUpperCase();
         console.log("InttoHex B: "+B);
+        if (B.length == 1) {B = ("0"+B)}
+        else {B = B}
 
+        console.log("C value= "+C);
         C = parseInt(C, 16);
         console.log("HextoInt C: "+C);
-        C = +C -2048 +4097;
+        C = +C +2049;
+        C = +C % 4096;
+        console.log("C % 4096 = "+C);
         C = Math.abs(C);
-        console.log("C - 2047 "+C);
         C = C.toString(16).toUpperCase();
         console.log("InttoHex C: "+C);
+        if (C.length == 1) {C = ("00"+C)}
+        if (C.length == 2) {C = ("0"+C)}
+        else {C = C}
 
         D = D.slice(1);
-        console.log("D= "+D)
+        console.log("D= "+D);
 
-        var planet = $(".planetNumber option:selected").val();
-        var galaxytoPortal = planet+D+B+C+A;
+        var portal = $(".portalNumber option:selected").val();
+        var galaxytoPortal = portal+D+B+C+A;
         console.log(galaxytoPortal);
         var portalglyphs = "";
         for (var i = 0, len = galaxytoPortal.length; i < len; i++) {

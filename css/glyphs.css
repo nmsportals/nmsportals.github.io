@@ -447,13 +447,13 @@ body {
   font-family: roboto;
   font-weight: 400;
 }
-.planetnumberbox {
+.portalNumberBox {
   text-align: center;
   font-family: roboto;
   font-size: 14px;
   margin: 5px 0 0;
 }
-.planetNumber {
+.portalNumber {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
@@ -468,13 +468,13 @@ body {
   color: #fff;
   width: 50px;
 }
-.planetNumber option {
+.portalNumber option {
   background:#000;
   padding: 0px;
   font-size: 13px;
 }
-.planetNumber:placeholder {color:#fff}
-.planetNumberDesc {
+.portalNumber:placeholder {color:#fff}
+.portalNumberDesc {
   display: inline-block;
   padding: 4px 8px;
   font-size: 12px;
