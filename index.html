@@ -1,6 +1,6 @@
 <html >
 <head>
-    <title>No Man's Sky Portals Decoder</title>
+    <title>No Man's Sky Portal Decoder</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Convert No Man's Sky Portal glyphs to text and text glyphs, share your portal coordinates!">
@@ -75,15 +75,26 @@
                 <div class="glyphlink"></div>
               </div>
               <div class="linkbuttons">
-                <button id="copybtn">Copy link</button>
-                <button id="copybtncode">Copy code only</button>
+				<div class="relative inline-block">
+					<span class="copymsg copybtnportallink">Copied!</span>
+					<button id="copybtn">Copy link</button>
+				</div>
+				<div class="relative inline-block">
+					<span class="copymsg copybtnportalcode">Copied!</span>
+					<button id="copybtncode">Copy code only</button>
+				</div>
               </div>
               <div class="galacticAddressBox">
                 <div class="gaTitleblock"><span class="gaTitle">Galactic Address:</span></div>
                 <div class="galacticAddress"></div>
               </div>
               <div class="buttonblock">
-                <button id="copygaaddress">Copy Galactic Address</button>
+				<div class="relative inline-block">
+					<div class="relative inline-block">
+						<span class="copymsg copybtngaaddress">Copied!</span>
+						<button id="copygaaddress">Copy Galactic Address</button>
+					</div>
+				</div>
               </div>
             </div>
           </div>
@@ -105,7 +116,10 @@
               <div class="galacticAddressCode"></div>
             </div>
             <div class="buttonblock">
-              <button id="copygaaddresscode">Copy Galactic Address</button>
+				<div class="relative inline-block">
+					<span class="copymsg copybtngaaddress">Copied!</span>
+					<button id="copygaaddresscode">Copy Galactic Address</button>
+				</div>
             </div>
             <div class="linkbuttons">
               <div class="clearbuttonbox">
@@ -139,7 +153,10 @@
             </div>
             <div class="linkbuttons">
               <div class="clearbuttonbox">
-                <button id="copygaaddressLink">Copy Link</button>
+				<div class="relative inline-block">
+					<span class="copymsg copybtngaportallink">Copied!</span>
+					<button id="copygaaddressLink">Copy Link</button>
+				</div>
                 <button class="clearga">Clear</button>
               </div>
             </div>

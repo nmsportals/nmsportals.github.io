@@ -4,53 +4,64 @@ $('document').ready(function() {
   var copyLink = document.querySelector('#copybtn');
   copyLink.addEventListener('click', function () {
     var copiedObj = document.querySelector('#glyphlink');
+	$(this).parent().find('.copymsg').fadeIn({queue: false, duration: '150'});
+    $(this).parent().find('.copymsg').animate({top:'-10px'},150);
+	$(this).parent().find('.copymsg').delay(500).fadeOut(300);
     // select the contents
     copiedObj.select();
 
     document.execCommand('copy'); // or 'cut'
-    $('#copybtn').html('Copied!')
   }, false);
 
   var copyCode = document.querySelector('#copybtncode');
   copyCode.addEventListener('click', function () {
     var copiedObj = document.querySelector('#glyphcode');
+	$(this).parent().find('.copymsg').fadeIn({queue: false, duration: '150'});
+    $(this).parent().find('.copymsg').animate({top:'-10px'},150);
+	$(this).parent().find('.copymsg').delay(500).fadeOut(300);
     // select the contents
     copiedObj.select();
 
     document.execCommand('copy'); // or 'cut'
-    $('#copybtncode').html('Copied!')
   }, false);
 
   var copyGaAddress = document.querySelector('#copygaaddress');
   copyGaAddress.addEventListener('click', function () {
     var copiedObj = document.querySelector('#galacticAddress');
+	$(this).parent().find('.copymsg').fadeIn({queue: false, duration: '150'});
+    $(this).parent().find('.copymsg').animate({top:'-10px'},150);
+	$(this).parent().find('.copymsg').delay(500).fadeOut(300);
     // select the contents
     copiedObj.select();
 
     document.execCommand('copy'); // or 'cut'
-    $('#copygaaddress').html('Copied!')
   }, false);
 
   var copyGaAddressCode = document.querySelector('#copygaaddresscode');
   copyGaAddressCode.addEventListener('click', function () {
     var copiedObj = document.querySelector('#galacticAddressCode');
+	$(this).parent().find('.copymsg').fadeIn({queue: false, duration: '150'});
+    $(this).parent().find('.copymsg').animate({top:'-10px'},150);
+	$(this).parent().find('.copymsg').delay(500).fadeOut(300);
     // select the contents
     copiedObj.select();
 
     document.execCommand('copy'); // or 'cut'
-    $('#copygaaddresscode').html('Copied!')
   }, false);
   
   var copyGaAddressLink = document.querySelector('#copygaaddressLink');
   copyGaAddressLink.addEventListener('click', function () {
     var copiedObj = document.querySelector('#gacoordstoglyphslink');
+	$(this).parent().find('.copymsg').fadeIn({queue: false, duration: '150'});
+    $(this).parent().find('.copymsg').animate({top:'-10px'},150);
+	$(this).parent().find('.copymsg').delay(500).fadeOut(300);
     // select the contents
     copiedObj.select();
 
     document.execCommand('copy'); // or 'cut'
-    $('#copygaaddressLink').html('Copied!')
   }, false);
 
+  
 
 
 
@@ -434,7 +445,10 @@ $('document').ready(function() {
       $('.portalGlyphBox').removeClass('blackgd');
       $('.portalCodeBox').removeClass('blackgd');
       $('.portalTitle').hide();
+	  $('.gacoordstoglyphslink').html('');
+	  $('#gacoordstoglyphslink').val('');
       $('#copygaaddressLink').hide();
+	  
     }
 
   });
@@ -514,9 +528,9 @@ $('document').ready(function() {
     $('.portalCodeBox').removeClass('blackgd');
     $('.portalTitle').hide();
     $('.gacoordstoglyphslink').html('');
-    $('.gacoordstoglyphslink').hide();
     $('#gacoordstoglyphslink').html('');
     $('#copygaaddressLink').hide();
+	$('#gacoordstoglyphslink').val('');
     $('.gacoordsError').fadeOut(300);
     $(this).hide();
   });

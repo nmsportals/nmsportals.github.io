@@ -10,6 +10,8 @@ body {
   background-size: cover;
   position: relative;
   min-height: 100%;
+  font-family: roboto;
+  font-weight: 300;
 }
 .bg-overlay {
   position: fixed;
@@ -562,6 +564,7 @@ body {
 }
 .clearbuttonbox {
   display: inline-block;
+  position: relative;
 }
 .blackgd {
   background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 20%, rgba(0,0,0,0.75) 80%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
@@ -703,6 +706,39 @@ body {
   right: 11px;
   top: 32px;
   }
+}
+.copymsg {
+	display: none;
+	position: absolute;
+    width: 110px;
+    color: #346162;
+    background: #fff;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 0px;
+    font-size: 13px;
+    font-weight: 500;
+	top: 0px;
+}
+.copybtnportallink {
+	left: 20px;
+}
+.copybtnportalcode {
+	left: 45px;
+}
+.copybtngaaddress {
+	left: 69.5px;
+}
+.copybtngaportallink {
+	left: 20px;
+    width: 109px;
+}
+.relative {
+	position: relative;
+}
+.inline-block {
+	display: inline-block;
 }
 @media screen and (min-width:382px) {
   .version {
