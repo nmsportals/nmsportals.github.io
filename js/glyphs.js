@@ -425,9 +425,17 @@ $('document').ready(function() {
         D = D.slice(1);
         console.log("D= "+D);
 
-        var portal = $(".portalNumber option:selected").val();
-        var galaxytoPortal = portal+D+B+C+A;
-        console.log(galaxytoPortal);
+        var option = $(".portalNumber option:selected").val();
+        if (option == 10) {option = "A"}
+        if (option == 11) {option = "B"}
+        if (option == 12) {option = "C"}
+        if (option == 13) {option = "D"}
+        if (option == 14) {option = "E"}
+        if (option == 15) {option = "F"}
+        else {option = option}
+        var galaxytoPortal = option+D+B+C+A;
+        console.log("option, D, B, C, A");
+        console.log(option,D,B,C,A);
         var portalglyphs = "";
         for (var i = 0, len = galaxytoPortal.length; i < len; i++) {
           portalglyphs += '<i class="glyph-' + galaxytoPortal[i] + '"></i>';
