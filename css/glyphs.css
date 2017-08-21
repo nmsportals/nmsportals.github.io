@@ -338,7 +338,6 @@ body {
 .linkbuttons {
   display: block;
   text-align: center;
-  height: 50px;
 }
 .cleardelbuttons {
   display: block;
@@ -354,14 +353,14 @@ body {
 .glyphlinkbox {
   display: inline-block;
   margin: 0 auto;
-  padding: 0px 20px 4px;
+  padding: 0px 0px 4px;
   text-align: center;
 }
 .glyphlink, .gacoordstoglyphslink {
   display: flex;
   font-family: roboto;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
   letter-spacing: 1px;
   height: 22px;
   align-items: center;
