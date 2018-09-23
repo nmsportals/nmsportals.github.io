@@ -1,6 +1,6 @@
 $('document').ready(function() {
   
-  var version = "V 1.1";
+  var version = "V 1.2";
   $('.version').html(version);
   
   var copyLink = document.querySelector('#copybtn');
