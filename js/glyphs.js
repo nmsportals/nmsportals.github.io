@@ -323,7 +323,7 @@ $('document').ready(function() {
   });
 
   var portalchoice = $('.portalNumber').get(0);
-  for (var i = 0; i <= 15; ++i) {
+  for (var i = 0; i <= 5; ++i) {
     portalchoice[portalchoice.length] = new Option(i +1, i);
   }
 
