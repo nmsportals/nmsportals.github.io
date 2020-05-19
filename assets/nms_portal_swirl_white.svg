@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="10.8272mm" height="10.8373mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 21 21"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="10.8371mm" height="10.8472mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 24 24"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
@@ -11,6 +11,6 @@ viewBox="0 0 21 21"
   </style>
  </defs>
  <g id="Camada_x0020_1">
-  <path class="fil0" d="M10 0c6,0 10,5 10,10 0,7 -7,13 -14,10 -4,-2 -7,-6 -7,-10 0,-6 5,-10 10,-10zm-3 19c2,1 4,1 6,0 -1,0 -2,0 -3,0 -4,-1 -7,-5 -7,-9 0,-4 3,-7 7,-7 4,0 7,3 7,7 0,4 -4,6 -7,5 -2,-1 -4,-3 -4,-5 0,-2 1,-4 4,-4 2,0 4,1 4,4 0,2 -2,4 -4,4 3,2 7,0 7,-3 0,-3 -3,-6 -6,-6 -3,0 -6,3 -6,6 0,3 3,7 6,7 5,1 9,-2 9,-7 0,-5 -4,-9 -9,-9 -5,0 -9,4 -9,9 0,4 2,7 6,9z"/>
+  <path class="fil0" d="M12 0c6,0 12,5 12,12 0,8 -8,14 -16,11 -4,-2 -7,-6 -7,-11 0,-7 5,-12 12,-12zm-4 22c2,1 5,1 7,0 -1,0 -2,0 -4,0 -5,-1 -8,-5 -8,-10 0,-5 3,-8 8,-8 4,0 8,4 8,8 0,4 -4,7 -8,6 -2,-1 -4,-4 -4,-6 0,-2 2,-4 4,-4 2,0 4,2 4,4 0,2 -2,4 -5,4 3,2 7,0 8,-4 0,-4 -3,-7 -7,-7 -4,0 -7,3 -7,7 0,4 3,7 7,8 5,1 10,-3 10,-8 0,-6 -5,-11 -10,-11 -6,0 -10,5 -10,11 0,4 3,8 7,10z"/>
  </g>
 </svg>
