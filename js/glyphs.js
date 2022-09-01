@@ -324,7 +324,7 @@ $('document').ready(function() {
 
   var portalchoice = $('.portalNumber').get(0);
   for (var i = 1; i <= 6; ++i) {
-    portalchoice[portalchoice.length] = new Option(i +1, i);
+    portalchoice[portalchoice.length] = new Option(i, i);
   }
 
   $('.portalNumber').change(function(){
