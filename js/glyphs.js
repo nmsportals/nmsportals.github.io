@@ -323,7 +323,7 @@ $('document').ready(function() {
   });
 
   var portalchoice = $('.portalNumber').get(0);
-  for (var i = 0; i <= 5; ++i) {
+  for (var i = 1; i <= 6; ++i) {
     portalchoice[portalchoice.length] = new Option(i +1, i);
   }
 
@@ -458,8 +458,8 @@ $('document').ready(function() {
       $('.portalGlyphBox').removeClass('blackgd');
       $('.portalCodeBox').removeClass('blackgd');
       $('.portalTitle').hide();
-			$('.gacoordstoglyphslink').html('');
-			$('#gacoordstoglyphslink').val('');
+      $('.gacoordstoglyphslink').html('');
+      $('#gacoordstoglyphslink').val('');
       $('#copygaaddressLink').hide();
 	  
     }
