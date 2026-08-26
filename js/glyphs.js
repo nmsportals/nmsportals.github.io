@@ -163,7 +163,7 @@ $('document').ready(function() {
       console.log("FINAL O: "+O);
 
       var ValidateO = parseInt(O, 16);
-      if ( ValidateO > 767) {
+      if ( ValidateO > 1065) {
         console.log("O valueErrorCode:"+O);
         $('.portalError').fadeIn({queue: false, duration: '300'});
       } else {
@@ -291,7 +291,7 @@ $('document').ready(function() {
       var ValidateO = parseInt(O, 16);
         var ValidateO = parseInt(O, 16);
         console.log("ValidateO value:"+ValidateO);
-        if ( ValidateO > 767) {
+        if ( ValidateO > 1065) {
           console.log("O valueError:"+O);
           $('.glyphsError').fadeIn({queue: false, duration: '300'});
         } else {
@@ -365,7 +365,7 @@ $('document').ready(function() {
         $('.gacoordsError').fadeIn({queue: false, duration: '300'});
         $('.wrongcoords').html(C);
         doConversion = false;
-      } else if ( parseInt(D, 16) > 767 || parseInt(D, 16) < 0) {
+      } else if ( parseInt(D, 16) > 1065 || parseInt(D, 16) < 0) {
         console.log("Invalid Address D");
         $('.gacoordsError').fadeIn({queue: false, duration: '300'});
         $('.wrongcoords').html(D);
